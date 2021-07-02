@@ -28,7 +28,6 @@ class UserController extends Controller
         $request->validate([
             'first_name' => 'bail | string | min:3 | max:20',
             'last_name' => 'bail | string | min:3 | max:20',
-            'username' => 'bail | min:3 | max:20 | unique',
             'email' => 'bail | email | max:50',
         ]);
         // update user
